@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInterface.MainActivity"
+    android:background="@drawable/arkaplan"
+    android:id="@+id/relativeLayout_Main">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/relativeLayout_1"
+        android:layout_below="@+id/textView_Main"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:contentDescription="@null"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/vakitImageView_1"
+            android:src="@drawable/imsak_simge"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İmsak"
+            android:textColor="#FFFFFFFF"
+            android:id="@+id/nameTextView_1"
+            android:layout_below="@+id/vakitImageView_1"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:15"
+            android:textColor="#FFFFFFFF"
+            android:id="@+id/timeTextView_1"
+            android:layout_below="@+id/nameTextView_1"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/relativeLayout_2"
+        android:layout_below="@+id/textView_Main"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:contentDescription="@null"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/vakitImageView_2"
+            android:src="@drawable/g_ne__simge"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İmsak"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:id="@+id/nameTextView_2"
+            android:layout_below="@+id/vakitImageView_2"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:15"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:id="@+id/timeTextView_2"
+            android:layout_below="@+id/nameTextView_2"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/relativeLayout_3"
+        android:layout_below="@+id/textView_Main"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:contentDescription="@null"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/vakitImageView_3"
+            android:src="@drawable/__le_simge"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İmsak"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:id="@+id/nameTextView_3"
+            android:layout_below="@+id/vakitImageView_3"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:15"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:id="@+id/timeTextView_3"
+            android:layout_below="@+id/nameTextView_3"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/relativeLayout_Current"
+        android:background="#88550000"
+        android:layout_below="@+id/relativeLayout_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView_Current"
+            android:src="@drawable/__le_simge"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Öğle Vakti - 13:15"
+            android:id="@+id/nameAndTimeTextView_Current"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:layout_alignTop="@+id/imageView_Current"
+            android:layout_toRightOf="@+id/imageView_Current"
+            android:layout_toEndOf="@+id/imageView_Current"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İkindi Vaktine Kalan Süre:"
+            android:id="@+id/nextTimeTextView_Current"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView_Current"
+            android:layout_toEndOf="@+id/imageView_Current"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 saat 15 dakika"
+            android:id="@+id/timeRemaniningTextView_Current"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:layout_alignBottom="@+id/imageView_Current"
+            android:layout_toRightOf="@+id/imageView_Current"
+            android:layout_toEndOf="@+id/imageView_Current"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/relativeLayout_4"
+        android:layout_below="@+id/relativeLayout_Current"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:contentDescription="@null"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/vakitImageView_4"
+            android:src="@drawable/ikindi_simge"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İmsak"
+            android:textColor="#FFFFFFFF"
+            android:id="@+id/nameTextView_4"
+            android:textSize="20sp"
+            android:layout_below="@+id/vakitImageView_4"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:15"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:id="@+id/timeTextView_4"
+            android:layout_below="@+id/nameTextView_4"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/relativeLayout_5"
+        android:layout_below="@+id/relativeLayout_Current"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:contentDescription="@null"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/vakitImageView_5"
+            android:src="@drawable/ak_am_simge"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İmsak"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:id="@+id/nameTextView_5"
+            android:layout_below="@+id/vakitImageView_5"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:15"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:id="@+id/timeTextView_5"
+            android:layout_below="@+id/nameTextView_5"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/relativeLayout_6"
+        android:layout_below="@+id/relativeLayout_Current"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:contentDescription="@null"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/vakitImageView_6"
+            android:src="@drawable/yats__simge"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İmsak"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:id="@+id/nameTextView_6"
+            android:layout_below="@+id/vakitImageView_6"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:15"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:id="@+id/timeTextView_6"
+            android:layout_below="@+id/nameTextView_6"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="3dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="6 Mayıs 2016, Perşembe - İstanbul"
+        android:id="@+id/textView_Main"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textColor="#FFFFFFFF"
+        android:background="#66222222"
+        android:textAlignment="center"/>
+
+</RelativeLayout>
